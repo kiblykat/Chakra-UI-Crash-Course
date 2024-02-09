@@ -1,9 +1,11 @@
-import { Box, SimpleGrid } from "@chakra-ui/react";
+import { Box, SimpleGrid, Text } from "@chakra-ui/react";
 
 export default function Dashboard() {
   return (
     <SimpleGrid spacing={10} minChildWidth="250px">
-      <Box bg="white" h="200px" border="1px"></Box>
+      <Box bg="white" h="200px" border="1px">
+        <Text color={{ base: "black", sm: "orange", md: "green" }}>hello</Text>
+      </Box>
       <Box bg="white" h="200px" border="1px"></Box>
       <Box bg="white" h="200px" border="1px"></Box>
       <Box bg="white" h="200px" border="1px"></Box>
