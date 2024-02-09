@@ -1,5 +1,36 @@
+import { Box, Container, Heading, Text } from "@chakra-ui/react";
+
 export default function Dashboard() {
+  const boxStyles = {
+    p: "10px",
+    bg: "purple.400",
+    color: "white",
+    m: "10px",
+    textAlign: "center",
+    filter: "blur(2px)",
+    ":hover": {
+      color: "black",
+      bg: "blue.200",
+    },
+  };
+
   return (
-    <div>Dashboard</div>
-  )
+    <Container as="section" maxWidth="4xl" py="20px">
+      <Heading my="30px" p="10px">
+        Chakra UI Components
+      </Heading>
+      <Text ml="30px">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, a!
+      </Text>
+      <Text ml="30px" color="blue">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, a!
+      </Text>
+
+      <Box my="30px" p="20px" bg="orange">
+        <Text color="white">This is a box</Text>
+      </Box>
+
+      <Box sx={boxStyles}>Hello ninjas</Box>
+    </Container>
+  );
 }
