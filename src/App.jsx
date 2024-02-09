@@ -9,10 +9,12 @@ import Profile from "./pages/Profile";
 function App() {
   return (
     <BrowserRouter>
-      <Routes path="/" element={<RootLayout />}>
-        <Route index element={<Dashboard />} />
-        <Route path="create" element={<Create />} />
-        <Route path="profile" element={<Profile />} />
+      <Routes>
+        <Route path="/" element={<RootLayout />}>
+          <Route index element={<Dashboard />} />
+          <Route path="create" element={<Create />} />
+          <Route path="profile" element={<Profile />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
