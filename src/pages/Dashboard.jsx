@@ -1,36 +1,41 @@
-import { Box, Container, Heading, Text } from "@chakra-ui/react";
+import { Box, SimpleGrid } from "@chakra-ui/react";
 
 export default function Dashboard() {
-  const boxStyles = {
-    p: "10px",
-    bg: "purple.400",
-    color: "white",
-    m: "10px",
-    textAlign: "center",
-    filter: "blur(2px)",
-    ":hover": {
-      color: "black",
-      bg: "blue.200",
-    },
-  };
-
   return (
-    <Container as="section" maxWidth="4xl" py="20px">
-      <Heading my="30px" p="10px">
-        Chakra UI Components
-      </Heading>
-      <Text ml="30px">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, a!
-      </Text>
-      <Text ml="30px" color="blue">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, a!
-      </Text>
+    <SimpleGrid spacing={10} minChildWidth="250px">
+      <Box bg="white" h="200px" border="1px"></Box>
+      <Box bg="white" h="200px" border="1px"></Box>
+      <Box bg="white" h="200px" border="1px"></Box>
+      <Box bg="white" h="200px" border="1px"></Box>
 
-      <Box my="30px" p="20px" bg="orange">
-        <Text color="white">This is a box</Text>
-      </Box>
+      <Box bg="white" h="200px" border="1px"></Box>
+      <Box bg="white" h="200px" border="1px"></Box>
+      <Box bg="white" h="200px" border="1px"></Box>
+      <Box bg="white" h="200px" border="1px"></Box>
 
-      <Box sx={boxStyles}>Hello ninjas</Box>
-    </Container>
+      <Box bg="white" h="200px" border="1px"></Box>
+      <Box bg="white" h="200px" border="1px"></Box>
+      <Box bg="white" h="200px" border="1px"></Box>
+      <Box bg="white" h="200px" border="1px"></Box>
+    </SimpleGrid>
+
+    // {*Lesson 2*}
+    // <Container as="section" maxWidth="4xl" py="20px">
+    //   <Heading my="30px" p="10px">
+    //     Chakra UI Components
+    //   </Heading>
+    //   <Text ml="30px">
+    //     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, a!
+    //   </Text>
+    //   <Text ml="30px" color="blue">
+    //     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, a!
+    //   </Text>
+
+    //   <Box my="30px" p="20px" bg="orange">
+    //     <Text color="white">This is a box</Text>
+    //   </Box>
+
+    //   <Box sx={boxStyles}>Hello ninjas</Box>
+    // </Container>
   );
 }
